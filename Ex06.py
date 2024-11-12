@@ -1,6 +1,6 @@
-import math;
+from random import randint;
 
-numero_secreto = math.ceil(100 * math.random());
+numero_secreto = randint(1, 100);
 
 print("Adivinhe o número secreto entre 1 e 100");
 
@@ -11,9 +11,9 @@ palpite = int(input("Digite seu palpite: "));
 while palpite != numero_secreto:
     tentativas += 1;
     if palpite > numero_secreto:
-        print("Muito alto!.");
+        print("Muito alto!");
     elif palpite < numero_secreto:
-        print("Muito baixo!.");
+        print("Muito baixo!");
 
     palpite = int(input("Digite seu palpite: "));
     
